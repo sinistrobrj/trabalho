@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+        /* Estilo da mensagem que aparece */
+        #mensagem {
+            display: none;
+            margin-top: 10px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flavio Luiz dos Santos Aurora</h1>
+
+    <p id="biografia">
+        Meu nome é Flavio tenho 34 anos, sou de Niterói no Rio de Janeiro.<br>
+        Sou lutador de Kung Fu, gosto de andar de patins, viajar, surfar e ouvir música, apesar de ter uma clara preferência por rock.<br>
+        Eu também escuto bastante pop, sendo um verdadeiro fã do Michael Jackson e Tom Jones.<br>
+        Eu viajo sempre que possível e, no geral, curto mais o percurso do que a chegada, mas sempre aproveito bastante cada local que visito.
+    </p>
+
+    <ul>
+        <li>Gosto de patinar no Gelo e Inline</li>
+        <li>Viajar</li>
+        <li>Praticar artes marciais</li>
+    </ul>
+
+    <img src="imagens/patins.jpg" alt="Eu patinando">
+    <br>
+
+    <a href="https://www.howtogeek.com/">Site Sobre Tecnologia</a>
+    <br><br>
+
+    <!-- Botão que ativa a mensagem -->
+    <button onclick="mostrarMensagem()">Clique para ver uma mensagem</button>
+
+    <!-- Mensagem que aparecerá -->
+    <div id="mensagem">Você é capaz de conquistar tudo o que quiser! 💫</div>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>País</th>
+            <th>Foto</th>
+        </tr>
+        <tr>
+            <td>Montreal, Canada</td>
+            <td><img id="montreal-img" src="imagens/montreal canada.jpg" alt="Cidade de Montreal no Canadá" style="width: 300px; height: auto;"></td>
+        </tr>
+        <tr>
+            <td>Austrália</td>
+            <td><img id="australia-img" src="imagens/australia.jpg" alt="Cidade da Austrália" style="width: 300px; height: auto;"></td>
+        </tr>
+        <tr>
+            <td>Japão</td>
+            <td><img id="japao-img" src="imagens/japao.jpg" alt="Cidade do Japão" style="width: 300px; height: auto;"></td>
+        </tr>
+    </table>
+
+    <!-- JavaScript para exibir e ocultar a mensagem -->
+    <script>
+        function mostrarMensagem() {
+            const mensagem = document.getElementById("mensagem");
+            mensagem.style.display = "block";
+
+            setTimeout(() => {
+                mensagem.style.display = "none";
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>

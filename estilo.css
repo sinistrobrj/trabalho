@@ -1,0 +1,63 @@
+body{
+    background-color:aqua;
+
+}
+h1{
+    text-align: center;
+    color:crimson
+}
+p {
+    font-size: 28px;
+    text-align: justify;
+} 
+#biografia{
+    text-align:center;
+}
+a {
+  color: blue; /* cor padrão do link */
+  text-decoration: none;
+  font-size:30px
+}
+li {
+    margin-bottom:6px
+}
+a:hover {
+  color: red; /* cor quando passar o mouse por cima */
+}
+table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #000000;
+            background-color: #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;}
+
+#montreal-img {
+    width: 500px; /* ou qualquer tamanho que desejar */
+    height: auto;
+    border-radius: 60px;
+}
+
+#australia-img {
+    width: 500px; /* ou qualquer tamanho que desejar */
+    height: auto;
+    border-radius: 60px;
+}
+#japao-img {
+    width: 500px; /* ou qualquer tamanho que desejar */
+    height: auto;
+    border-radius: 60px;
+}
